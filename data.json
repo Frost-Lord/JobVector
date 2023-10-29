@@ -1,0 +1,234 @@
+{
+    "users": [
+        {
+            "current_cart": {
+                "carrot": 4,
+                "banana": 2,
+                "fish": 3,
+                "donut": 5
+            },
+            "previous_carts": [
+                {
+                    "carrot": 3,
+                    "donut": 1,
+                    "fish": 5,
+                    "egg": 3
+                },
+                {
+                    "fish": 3,
+                    "egg": 1,
+                    "donut": 3,
+                    "banana": 5,
+                    "apple": 1
+                }
+            ]
+        },
+        {
+            "current_cart": {
+                "carrot": 2,
+                "banana": 1,
+                "fish": 2,
+                "donut": 3
+            },
+            "previous_carts": [
+                {
+                    "carrot": 1,
+                    "donut": 2,
+                    "fish": 2,
+                    "egg": 2
+                },
+                {
+                    "fish": 2,
+                    "egg": 1,
+                    "donut": 1,
+                    "banana": 2,
+                    "apple": 1
+                }
+            ]
+        },
+        {
+            "current_cart": {
+                "carrot": 3,
+                "banana": 3,
+                "fish": 4,
+                "donut": 2
+            },
+            "previous_carts": [
+                {
+                    "carrot": 2,
+                    "donut": 1,
+                    "fish": 4,
+                    "egg": 2
+                },
+                {
+                    "fish": 4,
+                    "egg": 2,
+                    "donut": 2,
+                    "banana": 3,
+                    "apple": 1
+                }
+            ]
+        },
+        {
+            "current_cart": {
+                "carrot": 1,
+                "banana": 4,
+                "fish": 1,
+                "donut": 4
+            },
+            "previous_carts": [
+                {
+                    "carrot": 4,
+                    "donut": 2,
+                    "fish": 3,
+                    "egg": 3
+                },
+                {
+                    "fish": 1,
+                    "egg": 3,
+                    "donut": 4,
+                    "banana": 4,
+                    "apple": 2
+                }
+            ]
+        },
+        {
+            "current_cart": {
+                "carrot": 2,
+                "banana": 2,
+                "fish": 2,
+                "donut": 3
+            },
+            "previous_carts": [
+                {
+                    "carrot": 3,
+                    "donut": 2,
+                    "fish": 2,
+                    "egg": 1
+                },
+                {
+                    "fish": 2,
+                    "egg": 2,
+                    "donut": 3,
+                    "banana": 2,
+                    "apple": 2
+                }
+            ]
+        },
+        {
+            "current_cart": {
+                "carrot": 3,
+                "banana": 2,
+                "fish": 4,
+                "donut": 4
+            },
+            "previous_carts": [
+                {
+                    "carrot": 4,
+                    "donut": 3,
+                    "fish": 3,
+                    "egg": 2
+                },
+                {
+                    "fish": 4,
+                    "egg": 2,
+                    "donut": 3,
+                    "banana": 2,
+                    "apple": 3
+                }
+            ]
+        },
+        {
+            "current_cart": {
+                "carrot": 2,
+                "banana": 3,
+                "fish": 3,
+                "donut": 2
+            },
+            "previous_carts": [
+                {
+                    "carrot": 3,
+                    "donut": 1,
+                    "fish": 4,
+                    "egg": 3
+                },
+                {
+                    "fish": 3,
+                    "egg": 2,
+                    "donut": 2,
+                    "banana": 3,
+                    "apple": 1
+                }
+            ]
+        },
+        {
+            "current_cart": {
+                "carrot": 4,
+                "banana": 1,
+                "fish": 1,
+                "donut": 5
+            },
+            "previous_carts": [
+                {
+                    "carrot": 2,
+                    "donut": 2,
+                    "fish": 1,
+                    "egg": 2
+                },
+                {
+                    "fish": 1,
+                    "egg": 1,
+                    "donut": 5,
+                    "banana": 1,
+                    "apple": 1
+                }
+            ]
+        },
+        {
+            "current_cart": {
+                "carrot": 1,
+                "banana": 4,
+                "fish": 3,
+                "donut": 3
+            },
+            "previous_carts": [
+                {
+                    "carrot": 4,
+                    "donut": 2,
+                    "fish": 2,
+                    "egg": 3
+                },
+                {
+                    "fish": 3,
+                    "egg": 3,
+                    "donut": 2,
+                    "banana": 4,
+                    "apple": 2
+                }
+            ]
+        },
+        {
+            "current_cart": {
+                "carrot": 3,
+                "banana": 3,
+                "fish": 2,
+                "donut": 4
+            },
+            "previous_carts": [
+                {
+                    "carrot": 2,
+                    "donut": 2,
+                    "fish": 3,
+                    "egg": 2
+                },
+                {
+                    "fish": 2,
+                    "egg": 3,
+                    "donut": 4,
+                    "banana": 3,
+                    "apple": 1
+                }
+            ]
+        }
+    ]
+}
