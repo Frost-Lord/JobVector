@@ -51,7 +51,7 @@ pub async fn get_post(id: u64) -> Result<impl warp::Reply, Rejection> {
 
     let post = Post {
         id,
-        body: format!("This is a post about Warp. Predicted item: {}", predicted_item),
+        body: format!("Predicted item: {}", predicted_item),
     };
     Ok(warp::reply::json(&post))
 }
