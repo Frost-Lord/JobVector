@@ -2,6 +2,7 @@ use tensorflow::{Graph, SavedModelBundle, Session, SessionOptions, SessionRunArg
 use warp::Rejection;
 use serde::{Deserialize, Serialize};
 use std::result::Result;
+use crate::BColors;
 
 fn model_load() -> Result<(Graph, Session), Status> {
     let mut graph = Graph::new();
@@ -29,6 +30,7 @@ pub struct Post {
 }
 
 pub async fn get_post(id: u64) -> Result<impl warp::Reply, Rejection> {
+    let colors = BColors::new();
     let (graph, session) = model_load().unwrap();
     
     let data: Vec<f32> = vec![0.0, 1.0, 0.0, 0.0, 1.0, 0.0];
@@ -48,6 +50,7 @@ pub async fn get_post(id: u64) -> Result<impl warp::Reply, Rejection> {
     let output_data: Vec<f32> = output_tensor.iter().cloned().collect();
 
     let predicted_item = get_item_from_prediction(&output_data);
+    println!("{}Prediction processed: {}{}", colors.blue, colors.endc, predicted_item);
 
     let post = Post {
         id,
