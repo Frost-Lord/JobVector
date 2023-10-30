@@ -1,234 +1,239 @@
 {
-    "users": [
-        {
-            "current_cart": {
-                "carrot": 4,
-                "banana": 2,
-                "fish": 3,
-                "donut": 5
-            },
-            "previous_carts": [
-                {
-                    "carrot": 3,
-                    "donut": 1,
-                    "fish": 5,
-                    "egg": 3
-                },
-                {
-                    "fish": 3,
-                    "egg": 1,
-                    "donut": 3,
-                    "banana": 5,
-                    "apple": 1
-                }
-            ]
-        },
-        {
-            "current_cart": {
-                "carrot": 2,
-                "banana": 1,
-                "fish": 2,
-                "donut": 3
-            },
-            "previous_carts": [
-                {
-                    "carrot": 1,
-                    "donut": 2,
-                    "fish": 2,
-                    "egg": 2
-                },
-                {
-                    "fish": 2,
-                    "egg": 1,
-                    "donut": 1,
-                    "banana": 2,
-                    "apple": 1
-                }
-            ]
-        },
-        {
-            "current_cart": {
-                "carrot": 3,
-                "banana": 3,
-                "fish": 4,
-                "donut": 2
-            },
-            "previous_carts": [
-                {
-                    "carrot": 2,
-                    "donut": 1,
-                    "fish": 4,
-                    "egg": 2
-                },
-                {
-                    "fish": 4,
-                    "egg": 2,
-                    "donut": 2,
-                    "banana": 3,
-                    "apple": 1
-                }
-            ]
-        },
-        {
-            "current_cart": {
-                "carrot": 1,
-                "banana": 4,
-                "fish": 1,
-                "donut": 4
-            },
-            "previous_carts": [
-                {
-                    "carrot": 4,
-                    "donut": 2,
-                    "fish": 3,
-                    "egg": 3
-                },
-                {
-                    "fish": 1,
-                    "egg": 3,
-                    "donut": 4,
-                    "banana": 4,
-                    "apple": 2
-                }
-            ]
-        },
-        {
-            "current_cart": {
-                "carrot": 2,
-                "banana": 2,
-                "fish": 2,
-                "donut": 3
-            },
-            "previous_carts": [
-                {
-                    "carrot": 3,
-                    "donut": 2,
-                    "fish": 2,
-                    "egg": 1
-                },
-                {
-                    "fish": 2,
-                    "egg": 2,
-                    "donut": 3,
-                    "banana": 2,
-                    "apple": 2
-                }
-            ]
-        },
-        {
-            "current_cart": {
-                "carrot": 3,
-                "banana": 2,
-                "fish": 4,
-                "donut": 4
-            },
-            "previous_carts": [
-                {
-                    "carrot": 4,
-                    "donut": 3,
-                    "fish": 3,
-                    "egg": 2
-                },
-                {
-                    "fish": 4,
-                    "egg": 2,
-                    "donut": 3,
-                    "banana": 2,
-                    "apple": 3
-                }
-            ]
-        },
-        {
-            "current_cart": {
-                "carrot": 2,
-                "banana": 3,
-                "fish": 3,
-                "donut": 2
-            },
-            "previous_carts": [
-                {
-                    "carrot": 3,
-                    "donut": 1,
-                    "fish": 4,
-                    "egg": 3
-                },
-                {
-                    "fish": 3,
-                    "egg": 2,
-                    "donut": 2,
-                    "banana": 3,
-                    "apple": 1
-                }
-            ]
-        },
-        {
-            "current_cart": {
-                "carrot": 4,
-                "banana": 1,
-                "fish": 1,
-                "donut": 5
-            },
-            "previous_carts": [
-                {
-                    "carrot": 2,
-                    "donut": 2,
-                    "fish": 1,
-                    "egg": 2
-                },
-                {
-                    "fish": 1,
-                    "egg": 1,
-                    "donut": 5,
-                    "banana": 1,
-                    "apple": 1
-                }
-            ]
-        },
-        {
-            "current_cart": {
-                "carrot": 1,
-                "banana": 4,
-                "fish": 3,
-                "donut": 3
-            },
-            "previous_carts": [
-                {
-                    "carrot": 4,
-                    "donut": 2,
-                    "fish": 2,
-                    "egg": 3
-                },
-                {
-                    "fish": 3,
-                    "egg": 3,
-                    "donut": 2,
-                    "banana": 4,
-                    "apple": 2
-                }
-            ]
-        },
-        {
-            "current_cart": {
-                "carrot": 3,
-                "banana": 3,
-                "fish": 2,
-                "donut": 4
-            },
-            "previous_carts": [
-                {
-                    "carrot": 2,
-                    "donut": 2,
-                    "fish": 3,
-                    "egg": 2
-                },
-                {
-                    "fish": 2,
-                    "egg": 3,
-                    "donut": 4,
-                    "banana": 3,
-                    "apple": 1
-                }
-            ]
-        }
+    "jobs": [
+      {
+        "job_type": "Software_Engineering",
+        "user_interests": ["coding", "creating", "work_life_balance"],
+        "recommendation": "If you enjoy coding, creating, and value work_life balance, consider a career in Software Engineering."
+      },
+      {
+        "job_type": "Electrician",
+        "user_interests": ["outdoors", "electricity"],
+        "recommendation": "If you like working outdoors and have an interest in electricity, a career as an Electrician may be a good fit for you."
+      },
+      {
+        "job_type": "Graphic_Design",
+        "user_interests": ["creating", "artistic", "freelancing"],
+        "recommendation": "For those who are artistic, enjoy creating, and prefer freelancing, Graphic Design could be a rewarding career choice."
+      },
+      {
+        "job_type": "Nurse",
+        "user_interests": ["helping_people", "medical_field", "empathy"],
+        "recommendation": "If you have a passion for helping people, an interest in the medical field, and possess empathy, consider becoming a Nurse."
+      },
+      {
+        "job_type": "Chef",
+        "user_interests": ["cooking", "culinary arts", "creativity"],
+        "recommendation": "For those who love cooking, have a passion for culinary arts, and are creative, a career as a Chef may be fulfilling."
+      },
+      {
+        "job_type": "Teacher",
+        "user_interests": ["education", "mentoring", "working_with_children"],
+        "recommendation": "If you're interested in education, enjoy mentoring, and like working with children, consider a career as a Teacher."
+      },
+      {
+        "job_type": "Mechanical_Engineer",
+        "user_interests": ["problem_solving", "mechanical_systems", "innovation"],
+        "recommendation": "Those who enjoy problem_solving, have an interest in mechanical systems, and value innovation might excel as Mechanical Engineers."
+      },
+      {
+        "job_type": "Lawyer",
+        "user_interests": ["research", "debate", "legal_matters"],
+        "recommendation": "If you're into research, enjoy debate, and have an interest in legal matters, a career as a Lawyer could be a good choice."
+      },
+      {
+        "job_type": "Firefighter",
+        "user_interests": ["courage", "helping others", "emergency_situations"],
+        "recommendation": "For individuals with courage, a passion for helping others, and the ability to handle emergency situations, Firefighting is a noble profession."
+      },
+      {
+        "job_type": "Accountant",
+        "user_interests": ["financial_analysis", "mathematics", "detail_oriented"],
+        "recommendation": "If you're detail_oriented, excel in financial analysis, and have a knack for mathematics, consider a career as an Accountant."
+      },
+      {
+        "job_type": "Social_Worker",
+        "user_interests": ["social_justice", "counseling", "community_support"],
+        "recommendation": "Those who are passionate about social justice, enjoy counseling, and want to provide community support may find fulfillment as a Social Worker."
+      },
+      {
+        "job_type": "Pilot",
+        "user_interests": ["aviation", "travel", "adventure"],
+        "recommendation": "If you're fascinated by aviation, love to travel, and seek adventure, a career as a Pilot might be a thrilling choice."
+      },
+      {
+        "job_type": "Data_Analyst",
+        "user_interests": ["data_analysis", "statistics", "problem_solving"],
+        "recommendation": "For individuals skilled in data analysis, statistics, and problem_solving, a career as a Data Analyst offers exciting opportunities."
+      },
+      {
+        "job_type": "Plumber",
+        "user_interests": ["mechanical_skills", "problem_solving", "hands_on_work"],
+        "recommendation": "If you have mechanical skills, enjoy problem_solving, and prefer hands_on work, consider becoming a Plumber."
+      },
+      {
+        "job_type": "Psychologist",
+        "user_interests": ["psychology", "counseling", "empathy"],
+        "recommendation": "If you have a deep interest in psychology, enjoy counseling, and possess empathy, a career as a Psychologist may be fulfilling."
+      },
+      {
+        "job_type": "Marketing_Manager",
+        "user_interests": ["marketing", "creativity", "leadership"],
+        "recommendation": "For those with a passion for marketing, creativity, and leadership skills, a career as a Marketing Manager offers growth opportunities."
+      },
+      {
+        "job_type": "Mechanic",
+        "user_interests": ["automobiles", "repair", "mechanical_aptitude"],
+        "recommendation": "If you're interested in automobiles, enjoy repair work, and have mechanical aptitude, consider becoming a Mechanic."
+      },
+      {
+        "job_type": "Architect",
+        "user_interests": ["design", "construction", "creativity"],
+        "recommendation": "For individuals with a flair for design, an interest in construction, and creativity, a career as an Architect may be the right fit."
+      },
+      {
+        "job_type": "Biomedical_Researcher",
+        "user_interests": ["biomedicine", "research", "science"],
+        "recommendation": "If you're passionate about biomedicine, enjoy research, and have a background in science, consider a career as a Biomedical Researcher."
+      },
+      {
+        "job_type": "Police_Officer",
+        "user_interests": ["law_enforcement", "protecting_communities", "challenging_situations"],
+        "recommendation": "For those interested in law enforcement, protecting communities, and handling challenging situations, a career as a Police Officer may be rewarding."
+      },
+      {
+        "job_type": "Journalist",
+        "user_interests": ["writing", "investigating", "current_events"],
+        "recommendation": "If you're passionate about writing, love investigating, and have a keen interest in current events, Journalism could be a rewarding field."
+      },
+      {
+        "job_type": "Photographer",
+        "user_interests": ["photography", "artistic", "freelancing"],
+        "recommendation": "For those who enjoy photography, are artistic, and prefer freelancing, a career as a Photographer may be a good choice."
+      },
+      {
+        "job_type": "Physical_Therapist",
+        "user_interests": ["physical_fitness", "medical_field", "helping_people"],
+        "recommendation": "If you value physical fitness, have an interest in the medical field, and enjoy helping people, Physical Therapy could be a good career path."
+      },
+      {
+        "job_type": "Event_Planner",
+        "user_interests": ["organizing", "social_interaction", "creativity"],
+        "recommendation": "If you excel at organizing, enjoy social interaction, and are creative, consider a career in Event Planning."
+      },
+      {
+        "job_type": "Environmental_Scientist",
+        "user_interests": ["environment", "research", "conservation"],
+        "recommendation": "For those passionate about the environment, research, and conservation, Environmental Science offers fulfilling opportunities."
+      },
+      {
+        "job_type": "Astronomer",
+        "user_interests": ["space", "physics", "research"],
+        "recommendation": "If you are intrigued by space, have a good understanding of physics, and love research, a career in Astronomy may be fulfilling."
+      },
+      {
+        "job_type": "Interior_Designer",
+        "user_interests": ["design", "creativity", "aesthetics"],
+        "recommendation": "For those who love design, are highly creative, and have a sense of aesthetics, consider a career in Interior Design."
+      },
+      {
+        "job_type": "Veterinarian",
+        "user_interests": ["animals", "medical_field", "compassion"],
+        "recommendation": "If you love animals, have an interest in the medical field, and are compassionate, a career as a Veterinarian may be rewarding."
+      },
+      {
+        "job_type": "Real_Estate_Agent",
+        "user_interests": ["property", "negotiation", "flexibility"],
+        "recommendation": "For individuals interested in property, skilled in negotiation, and looking for flexibility, a career in Real Estate may be suitable."
+      },
+      {
+        "job_type": "Farmer",
+        "user_interests": ["agriculture", "outdoors", "sustainability"],
+        "recommendation": "If you have a passion for agriculture, enjoy working outdoors, and are committed to sustainability, Farming may be a good career path."
+      },
+      {
+        "job_type": "Tour_Guide",
+        "user_interests": ["travel", "history", "social_interaction"],
+        "recommendation": "For those who love to travel, have an interest in history, and enjoy social interaction, consider a career as a Tour Guide."
+      },
+      {
+        "job_type": "Game_Developer",
+        "user_interests": ["gaming", "coding", "creativity"],
+        "recommendation": "If you're passionate about gaming, enjoy coding, and are creative, a career as a Game Developer may be ideal."
+      },
+      {
+        "job_type": "Dentist",
+        "user_interests": ["medical_field", "precision", "helping_people"],
+        "recommendation": "If you're interested in the medical field, value precision, and enjoy helping people, a career as a Dentist may be fulfilling."
+      },
+      {
+        "job_type": "Dentist",
+        "user_interests": ["medical_field", "precision", "helping_people"],
+        "recommendation": "If you're interested in the medical field, value precision, and enjoy helping people, a career as a Dentist may be fulfilling."
+      },
+      {
+        "job_type": "Animator",
+        "user_interests": ["animation", "artistic", "technology"],
+        "recommendation": "If you love animation, have artistic talent, and are comfortable with technology, a career as an Animator could be a good fit."
+      },
+      {
+        "job_type": "Surgeon",
+        "user_interests": ["medical_field", "precision", "problem_solving"],
+        "recommendation": "For individuals interested in the medical field, value precision, and excel at problem solving, Surgery offers fulfilling opportunities."
+      },
+      {
+        "job_type": "Fashion_Designer",
+        "user_interests": ["fashion", "creativity", "artistic"],
+        "recommendation": "If you have a flair for fashion, are creative, and have artistic talents, a career in Fashion Design may be ideal."
+      },
+      {
+        "job_type": "Financial_Advisor",
+        "user_interests": ["finance", "planning", "consulting"],
+        "recommendation": "For those interested in finance, enjoy planning, and have skills in consulting, a career as a Financial Advisor could be rewarding."
+      },
+      {
+        "job_type": "Musician",
+        "user_interests": ["music", "performing", "creativity"],
+        "recommendation": "If you're passionate about music, enjoy performing, and are creative, consider pursuing a career as a Musician."
+      },
+      {
+        "job_type": "Research_Scientist",
+        "user_interests": ["research", "science", "innovation"],
+        "recommendation": "For individuals who love research, have a strong science background, and enjoy innovation, a Research Scientist role may be fitting."
+      },
+      {
+        "job_type": "Air_Traffic_Controller",
+        "user_interests": ["aviation", "stress_management", "attention_to_detail"],
+        "recommendation": "If you're interested in aviation, can manage stress effectively, and have keen attention to detail, consider a career as an Air Traffic Controller."
+      },
+      {
+        "job_type": "Civil_Engineer",
+        "user_interests": ["construction", "planning", "problem_solving"],
+        "recommendation": "For those who have an interest in construction, enjoy planning, and are good at problem solving, Civil Engineering may be the right field."
+      },
+      {
+        "job_type": "Sales_Representative",
+        "user_interests": ["sales", "communication", "persuasion"],
+        "recommendation": "If you excel at sales, have strong communication skills, and are persuasive, consider a career in Sales."
+      },
+      {
+        "job_type": "Construction_Worker",
+        "user_interests": ["hands_on_work", "outdoors", "physical_strength"],
+        "recommendation": "For individuals who enjoy hands_on work, love the outdoors, and have physical strength, Construction Work might be suitable."
+      },
+      {
+        "job_type": "Pharmacist",
+        "user_interests": ["medical_field", "chemistry", "customer_service"],
+        "recommendation": "If you have an interest in the medical field, enjoy chemistry, and have customer service skills, a career as a Pharmacist could be rewarding."
+      },
+      {
+        "job_type": "Film_Director",
+        "user_interests": ["movies", "creativity", "leadership"],
+        "recommendation": "For those who are passionate about movies, are creative, and have leadership skills, a career in Film Directing may be fulfilling."
+      },
+      {
+        "job_type": "Athlete",
+        "user_interests": ["sports", "physical_fitness", "competition"],
+        "recommendation": "If you're passionate about sports, value physical fitness, and thrive in competition, consider a career as an Athlete."
+      }
     ]
-}
+  }  

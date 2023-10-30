@@ -8,9 +8,11 @@ pub async fn handle_rejection(err: Rejection) -> Result<Box<dyn Reply>, Rejectio
     let json = warp::reply::json(&serde_json::json!({"error": message}));
     Ok(Box::new(json))
 }
+
 fn get_post() -> impl Filter<Extract = impl warp::Reply, Error = warp::Rejection> + Clone {
     warp::path!("predict" / u64)
-        .and(warp::get())
+        .and(warp::post())
+        .and(warp::body::json())
         .and_then(super::route::get_post::get_post)
 }
 
