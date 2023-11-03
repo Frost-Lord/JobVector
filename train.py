@@ -12,13 +12,19 @@ def load_data():
 
 def get_encoders(data):
     job_types = [job["job_type"] for job in data["jobs"]]
-    user_interests = list(set(interest for job in data['jobs'] for interest in job['user_interests']))  # Using set to get unique interests
+    user_interests = list(set(interest for job in data['jobs'] for interest in job['user_interests']))
 
     job_encoder = OneHotEncoder(sparse_output=False, handle_unknown='ignore')
     user_interest_encoder = OneHotEncoder(sparse_output=False, handle_unknown='ignore')
     
     job_encoder.fit(np.array(job_types).reshape(-1, 1))
-    user_interest_encoder.fit(np.array(user_interests).reshape(-1, 1))  # Fitting on unique interests
+    user_interest_encoder.fit(np.array(user_interests).reshape(-1, 1))
+
+    print(f"Job Types: {job_encoder.categories_[0]}")
+    print(f"User Interests: {user_interest_encoder.categories_[0]}")
+    print(f"Number of Job Types: {len(job_encoder.categories_[0])}")
+    print(f"Number of User Interests: {len(user_interest_encoder.categories_[0])}")
+    
     
     return job_encoder, user_interest_encoder
 
@@ -70,7 +76,7 @@ def main():
     user_interests_to_predict = ["education", "mentoring", "working_with_children"]
     user_interests_encoded = encode_interests(user_interests_to_predict, user_interest_encoder)
 
-    predictions = model.predict(user_interests_encoded)  # No need to reshape
+    predictions = model.predict(user_interests_encoded)
     unique_job_types = list(job_encoder.categories_[0])
     predicted_job_type = unique_job_types[np.argmax(predictions)]
     print(f"Predicted Job Type: {predicted_job_type}")

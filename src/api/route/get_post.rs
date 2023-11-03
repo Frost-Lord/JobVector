@@ -19,7 +19,17 @@ fn model_load() -> Result<(Graph, Session), Status> {
 }
 
 fn get_item_from_prediction(output: &[f32]) -> String {
-    let items = vec!["Mechanical_Engineer", "Data_Analyst", "Veterinarian", "Sales_Representative", "Firefighter", "Biomedical_Researcher", "Software_Engineering", "Journalist", "Pilot", "Air_Traffic_Controller", "Psychologist", "Environmental_Scientist", "Real_Estate_Agent", "Interior_Designer", "Social_Worker", "Construction_Worker", "Nurse", "Astronomer", "Mechanic", "Architect", "Research_Scientist", "Accountant", "Pharmacist", "Civil_Engineer", "Chef", "Photographer", "Police_Officer", "Game_Developer", "Dentist", "Physical_Therapist", "Animator", "Financial_Advisor", "Fashion_Designer", "Surgeon", "Musician", "Tour_Guide", "Event_Planner", "Lawyer", "Plumber", "Electrician", "Teacher", "Marketing_Manager", "Graphic_Design", "Film_Director", "Athlete", "Farmer"];
+    let items = vec!["Accountant", "Air_Traffic_Controller", "Animator", "Architect", "Astronomer"
+    , "Athlete", "Biomedical_Researcher", "Chef", "Civil_Engineer"
+    , "Construction_Worker", "Data_Analyst", "Dentist", "Electrician"
+    , "Environmental_Scientist", "Event_Planner", "Farmer", "Fashion_Designer"
+    , "Film_Director", "Financial_Advisor", "Firefighter", "Game_Developer"
+    , "Graphic_Design", "Interior_Designer", "Journalist", "Lawyer"
+    , "Marketing_Manager", "Mechanic", "Mechanical_Engineer", "Musician", "Nurse"
+    , "Pharmacist", "Photographer", "Physical_Therapist", "Pilot", "Plumber"
+    , "Police_Officer", "Psychologist", "Real_Estate_Agent", "Research_Scientist"
+    , "Sales_Representative", "Social_Worker", "Software_Engineering", "Surgeon"
+    , "Teacher", "Tour_Guide", "Veterinarian"];
     let max_index = output.iter()
                           .enumerate()
                           .max_by(|x, y| x.1.partial_cmp(y.1).unwrap())
