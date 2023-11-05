@@ -45,18 +45,18 @@ pub struct Post {
 }
 
 #[derive(Debug, Deserialize, Serialize, Clone)]
-pub struct FormData {
+pub struct BodyData {
     pub user_interests: Vec<String>,
     pub user_interest_encoder: String,
 }
 
-pub async fn get_post(id: u64, form: FormData) -> Result<impl warp::Reply, Rejection> {
+pub async fn get_post(id: u64, body: BodyData) -> Result<impl warp::Reply, Rejection> {
     let colors = BColors::new();
-    println!("{}[Rust AI] User interests: {}{:?}{}", colors.blue, colors.fail, form.user_interests, colors.endc);
+    println!("{}[Rust AI] User interests: {}{:?}{}", colors.blue, colors.fail, body.user_interests, colors.endc);
 
     let (graph, session) = model_load().map_err(|_| warp::reject::custom(CustomError("Model loading failed")))?;
 
-    let parsed_data: Vec<f32> = form.user_interest_encoder.split_whitespace().map(|s| s.parse().unwrap_or(0.0)).collect();
+    let parsed_data: Vec<f32> = body.user_interest_encoder.split_whitespace().map(|s| s.parse().unwrap_or(0.0)).collect();
     let input_tensor = Tensor::new(&[1, parsed_data.len() as u64]).with_values(&parsed_data).map_err(|_| warp::reject::custom(CustomError("Tensor creation failed")))?;
 
     let mut args = SessionRunArgs::new();
@@ -66,7 +66,11 @@ pub async fn get_post(id: u64, form: FormData) -> Result<impl warp::Reply, Rejec
     let output_op = graph.operation_by_name_required("StatefulPartitionedCall").map_err(|_| warp::reject::custom(CustomError("Output operation not found")))?;
     let output_token = args.request_fetch(&output_op, 0);
 
-    session.run(&mut args).map_err(|_| warp::reject::custom(CustomError("Session run failed")))?;
+    session.run(&mut args)
+        .map_err(|e| {
+            eprintln!("{}[Rust AI] {}TensorFlow session run error: {}{}", colors.blue, colors.fail, e, colors.endc);
+            warp::reject::custom(CustomError("Session run failed"))
+        })?;
 
     let output_tensor = args.fetch(output_token).map_err(|_| warp::reject::custom(CustomError("Fetching output tensor failed")))?;
     let output_data: Vec<f32> = output_tensor.iter().cloned().collect();
